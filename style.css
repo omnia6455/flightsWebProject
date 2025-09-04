@@ -101,7 +101,6 @@ body {
     bottom: 0px;
     width: 50%;
     max-width: 766px;
-    min-height: 872px;
     height: auto;
     background-image: url("Images/Decore.png");
     background-repeat: no-repeat;
@@ -118,7 +117,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 25px;
-    gap: 150px;
+    gap: 50px;
 }
 
 .navBarHead {
@@ -144,7 +143,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding-right: 20px;
     gap: 50px;
 }
 
@@ -182,11 +180,10 @@ body {
 .textAndBigImage {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 1600px;
     height: auto;
-    gap: 5px;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
@@ -287,6 +284,7 @@ body {
 }
 
 .travelImage {
+    width: 100%;
     max-width: 765px;
     height: auto;
     align-items: center;
@@ -305,17 +303,10 @@ body {
     left: 120px;
     z-index: -1;
 }
-
-.travelImageWrapper {
-    width: 100%;
-    max-width: 765px;
-    height: auto;
-}
-
 .travellerImage {
     width: 100%;
     max-width: 765px;
-    min-width: 240px;
+    min-width: 170px;
     min-height: 764px;
     z-index: 3;
 }
@@ -340,7 +331,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
     gap: 20px;
 }
@@ -583,6 +574,7 @@ body {
 .desCardWrapper {
     width: 100%;
     max-width: 450px;
+    min-width: 350px;
     display: inline-flex;
     flex-direction: row;
     align-items: flex-end;
@@ -590,8 +582,6 @@ body {
 }
 
 .desCard3 {
-    width: 100%;
-    min-width: 350px;
     z-index: 2;
 }
 
@@ -719,6 +709,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .square1 {
@@ -793,10 +784,14 @@ body {
 .cardTripWrapper:hover .tripBigCard {
     transform: scale(1.1);
 }
-
+.tripImage{
+    width: auto;
+    height: auto;
+}
 .imgTrip {
     border-radius: 24px;
-    width: 321px;
+    width: 100%;
+    max-width:321px;
     height: 161px;
 }
 
@@ -1052,9 +1047,10 @@ body {
     height: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     gap: 20px;
 }
 
@@ -1175,7 +1171,7 @@ body {
     height: 40px;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .arrowDiv:hover {
@@ -1665,6 +1661,9 @@ form input {
         min-width: 221px;
 
     }
+    .arrowDiv {
+          transform: rotate(90deg);
+    }
 }
 
 @media (max-width: 480px) {
@@ -1690,5 +1689,8 @@ form input {
     form input {
         min-width: 221px;
 
+    }
+    .arrowDiv {
+          transform: rotate(90deg);
     }
 }
