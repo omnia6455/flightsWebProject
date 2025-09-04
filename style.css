@@ -73,35 +73,10 @@ a {
 }
 
 body {
-    position: relative;
-    min-height: 100vh;
     background: var(--bg-color);
     overflow-x: hidden;
     transition: background-color 0.3s, color 0.3s;
 }
-
-body::before,
-body::after {
-    content: "";
-    position: absolute;
-    width: 478.9445495605469px;
-    height: 296.8642272949219px;
-    z-index: -1;
-    filter: blur(150px);
-}
-
-body::before {
-    top: -100px;
-    left: -320px;
-    background: var(--top-left-color);
-}
-
-body::after {
-    bottom: -100px;
-    right: -300px;
-    background: var(--bottom-right-color);
-}
-
 /* //////////////////////////////////////////////////////////////SECTION 1//////////////////////////////////////////////////////////////////////////////////// */
 .section1 {
     display: flex;
